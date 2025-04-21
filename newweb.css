@@ -1,28 +1,30 @@
-*{
+* {
     font-family: monospace;
 }
 
 body {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     background-color: silver;
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
+    align-items: center;
     background-color: black;
     color: white;
+    padding: 15px 20px;
 }
 
 .logo {
-    margin-left: 13px;
     font-size: 18px;
 }
 
-nav ul{
+nav ul {
     display: flex;
     align-items: center;
+    margin-left: auto; 
 }
 
 ul li {
@@ -31,7 +33,8 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    margin-inline: 16px;
+    margin-left: 40px;
+    padding-right: 4px;
     color: white;
     font-size: 18px;
 }
