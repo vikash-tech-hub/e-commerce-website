@@ -42,3 +42,25 @@ ul li a:hover,ul li a.active{
     color: rgb(10, 191, 247);
     font-weight: 600;
 }
+.icon{
+    display: none;
+    align-items: center;
+    font-size: 30px;
+    margin-right: 12px;
+
+
+}
+@media only screen and (max-width:600px){
+    nav ul{
+        display: none;
+    }
+    .icon{
+        display: flex;
+    }
+    .showData{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
