@@ -57,7 +57,7 @@ ul li a:hover,ul li a.active{
     .icon{
         display: flex;
     }
-    .showData{
+    .showdata{
         display: flex;
         flex-direction: column;
         justify-content: center;
