@@ -11,10 +11,12 @@ body {
 nav {
     display: flex;
     justify-content: space-between; 
-    align-items: center;
     background-color: black;
     color: white;
-    padding: 15px 20px;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+
 }
 
 .logo {
@@ -47,8 +49,11 @@ ul li a:hover,ul li a.active{
     align-items: center;
     font-size: 30px;
     margin-right: 12px;
-
-
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
 }
 @media only screen and (max-width:600px){
     nav ul{
