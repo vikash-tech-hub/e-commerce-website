@@ -15,7 +15,7 @@ nav {
     color: white;
     position: fixed;
     top: 0%;
-    width: 100%;
+    width: 100%; 
 
 }
 
@@ -54,6 +54,52 @@ ul li a:hover,ul li a.active{
     display: flex;
     justify-content: space-around;
     margin-top: 200px;
+}
+.maintext h1{
+    font-size: 55px;
+    justify-content: center;
+    color: aqua;
+}
+
+.maintext h2{
+    font-size: 33px;
+
+
+}
+.maintext button{
+    width: 120px;
+    height: 34px;
+    background-color: rgb(26, 116, 86);
+
+    
+}
+.maintext button:hover{
+    border:2px solid rgb(10, 54, 54);
+    background-color: transparent;
+    color: black;
+
+
+}
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.cards .crd{
+    margin-inline: 22px;
+    text-align: center;
+
+}
+.crd i{
+    color: orange;
+}
+.crd img{
+    width: 300px;
+    height: 340px;
+}
+.crd h3{
+    position: relative;
+    top: 1px;
 }
 @media only screen and (max-width:600px){
     nav ul{
