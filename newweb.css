@@ -208,8 +208,35 @@ ul li a:hover,ul li a.active{
     margin-top: 33px;
     color: white;
 }
+/* items page css */
+.itempage{
+   
+    display: none;
+    margin-top:33px ;
+    margin-left: 20px ;
 
-
+}
+.itempage img{
+    width: 360px;
+}
+.itempage .itemtext{
+    margin-inline: 24px;
+    
+}
+.itemtext h2{
+    color: rgb(62, 100, 6);
+}
+.itempage input{
+    width: 30px;
+    padding: 5px;
+    font-size: 18px;
+}
+.itemtext a{
+    padding: 4px 20px;
+    background-color: orangered;
+    color: white;
+    font-size:17px ;
+}
 
 
 @media only screen and (max-width:600px){
