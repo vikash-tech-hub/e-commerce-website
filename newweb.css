@@ -109,7 +109,7 @@ ul li a:hover,ul li a.active{
     top: 1px;
 }
 .head{
-    padding: 55px;
+    padding: 65px;
     text-align: center;
 }
 .head span{
@@ -201,6 +201,7 @@ ul li a:hover,ul li a.active{
 }
 .footer{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     background-color: black;
     padding: 43px;
@@ -232,5 +233,34 @@ ul li a:hover,ul li a.active{
         gap: 20px;
         padding: 0%;
         text-align: center;
+    }
+    .maintext h1{
+        font-size: 40px;
+
+    }
+    .maintext h2{
+        font-size: 24px;
+    }
+    .crd img{
+        width: 71%;
+    }
+    .connect input{
+        width: 60%;
+    }
+
+}
+@media only screen and (max-width:400px){
+    .main img{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .main{
+        display: block;
+        text-align: center;
+    }
+    .main img{
+        margin-top:center;
     }
 }
