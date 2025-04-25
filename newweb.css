@@ -238,7 +238,52 @@ ul li a:hover,ul li a.active{
     font-size:17px ;
 }
 
+/* buy page */
+.buypage{
+    display: none ;
+    width: 40%;
+    background-color: #fff;
+    padding: 22px;
+    position: absolute;
+    left: 25%;
+    right:50%;
+    top: 5%;
 
+}
+
+.buyText input{
+    width: 95%;
+    padding: 7px;
+    border: 2px solid black;
+    top: -15%;
+    margin-top: 8px;
+
+}
+.buyText .cross{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: rgb(53, 51, 51);
+    padding: 5px;
+    border-radius: 4px;
+}
+.buyText button{
+    width: 120px;
+    height: 34px;
+    background-color: aqua;
+    color: #fff;
+    font-size: 20pz;
+    border: none;
+    margin-top: 20px;
+
+}
+.buyText select{
+    padding: 4px;
+    font-size: 18px;
+
+
+
+}
 @media only screen and (max-width:600px){
     nav ul{
         display: none;

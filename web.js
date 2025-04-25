@@ -57,6 +57,7 @@ let crd = document.querySelectorAll(".crd");
 let itempage = document.querySelector(".itempage")
 let container = document.querySelector(".container");
 let itemimg = document.getElementById("itemimg");
+let buyBtn=document.getElementById("buyBtn");
 
 console.log(crd);
 
@@ -68,6 +69,9 @@ crd.forEach(function(curValue){
 
            let imgsrc = curValue.firstElementChild.src;
            itemimg.src=imgsrc;
+           buyBtn.addEventListener("click",function(){
+            
+           })
 
         
           //console.log(curValue);
