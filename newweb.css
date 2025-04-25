@@ -7,6 +7,10 @@ body {
     padding: 0;
     background-color: silver;
 }
+.container.logo h1{
+    margin-left: 85px;
+    
+}
 
 nav {
     display: flex;
@@ -16,17 +20,22 @@ nav {
     position: fixed;
     top: 0%;
     width: 100%; 
+    gap: 2px;
 
 }
 
 .logo {
     font-size: 18px;
+    margin-left: 18px;
+    font-style: oblique;
 }
 
 nav ul {
     display: flex;
     align-items: center;
     margin-left: auto; 
+    margin-right: 10px;
+
 }
 
 ul li {
@@ -321,6 +330,19 @@ ul li a:hover,ul li a.active{
     }
 
 }
+
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: black;
+    font-weight: 500px;
+}
+
+
+
+
+
 @media only screen and (max-width:400px){
     .main img{
         width: 95%;
