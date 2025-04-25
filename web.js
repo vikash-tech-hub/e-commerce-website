@@ -60,21 +60,69 @@ let itemimg = document.getElementById("itemimg");
 let buyBtn=document.getElementById("buyBtn");
 
 console.log(crd);
-
-
 crd.forEach(function(curValue){
-        curValue.addEventListener("click",function(){
-          itempage.style.display ="flex";
-          container.style.display =" none";
+  curValue.addEventListener("click", function(){
+      itempage.style.display = "flex";
+      container.style.display = "none";
 
-           let imgsrc = curValue.firstElementChild.src;
-           itemimg.src=imgsrc;
-           buyBtn.addEventListener("click",function(){
-            
-           })
+      let imgsrc = curValue.firstElementChild.src;
+      itemimg.src = imgsrc;
 
-        
-          //console.log(curValue);
-        })    
+      // Set content immediately
+      document.querySelector(".buyText").innerHTML = `
+          <h3>Enter details</h3>
+          <input type="text" placeholder="Enter your name"id="name"><br>
+          <input type="text" placeholder="Enter your Address"id="address"><br>
+          <input type="text" placeholder="Enter your Mobile no"id="number"><br>
+          <h3>Payment option :</h3>
+          <select>
+              <option value="Googlepay">Googlepay</option>
+              <option value="Phonepe">Phonepe</option>
+              <option value="Bharatpe">Bharatpe</option>
+              <option value="Paytm">Paytm</option>
+          </select><br>
+          
+      `;
+    
+      // Add event listener only once
+      buyBtn.onclick = function(){
+          document.querySelector(".buypage").style.display = "block";
+      };
+      let buyText = document.querySelector(".buyText");
 
-    })
+      let button=document.createElement("button")
+      button.innerText="submit"
+      buyText.append(button)
+      button.addEventListener("click",function(){
+        let name =document.getElementById("name");
+        let address =document.getElementById("address");
+        let number =document.getElementById("number");
+        if (name.value=="" && address.value=="" && number.value==""){
+          alert("please enter detail")
+        }else{
+          alert("your response recorded")
+        }
+      })
+
+      let cross = document.querySelector(".cross");
+      cross.addEventListener("click", function(){
+          document.querySelector(".buypage").style.display = "none";
+      });
+  });
+  // console.log(curValue);
+});
+
+
+// connect
+function connect(){
+  let names=document.getElementById("name");
+  let num=document.getElementById("number");
+  if (name.value=="" && num.value=="" ){
+    alert("fill detail")
+  }
+  else{
+    alert("thanks for connect")
+  }
+
+
+}
